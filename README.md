@@ -7,4 +7,14 @@ https://finance.yahoo.com/quote/HDFCBANK.NS/analysis
 https://finance.yahoo.com/quote/HDFCBANK.NS
 
 
+The formula is based on this users video
+
+https://www.youtube.com/watch?v=qxFgUGixDxQ
+
+
+
+
 ![image](https://github.com/programmer007007/peter_lync/assets/35029477/b7aa98c2-44fb-4935-bcd7-9779ea1f920b)
+
+
+
