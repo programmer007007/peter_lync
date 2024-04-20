@@ -108,12 +108,10 @@
 
         const stockInfo = parsedData[ticker_name];
 
-        // Extract required data
         const forwardGrowth = parseFloat(stockInfo['ForwardGrowth']);
         const dividendYield = parseFloat(stockInfo['DividendYield']);
         const peRatio = parseFloat(stockInfo['PE_RATIO']);
-
-        // Check if any of the required data is missing
+       
         if (isNaN(forwardGrowth) || isNaN(dividendYield) || isNaN(peRatio)) {
             //alert('Some of the required data is missing. Cannot perform calculation.');
             return;
@@ -132,18 +130,13 @@
             classification = 'Undervalued';
         } else {
             classification = 'Very Undervalued';
-        }
-
-        // Show the classification in an alert window
+        }       
         alert(`Stock: ${ticker_name}\nClassification: ${classification}`);
     }
     function cleanData(data) {
-        if(data){
-            // Remove anything that is not within brackets (if brackets exist)
+        if(data){         
             const match = data.match(/\((.*?)\)/);
-            const cleanedData = match ? match[1] : data;
-
-            // Remove the percentage sign (%) and return the cleaned data
+            const cleanedData = match ? match[1] : data;           
             return cleanedData.replace('%', '');
         }else{
             return data;
@@ -155,8 +148,7 @@
     let fdy = getInfoBySpanText('Forward Dividend & Yield');
     let fgrwth = getInfoByTdText('Next 5 Years (per annum)');
     let pe_ratio = getInfoBySpanText('PE Ratio (TTM)');
-    // Store data in localStorage as JSON
-    debugger;
+    // Store data in localStorage as JSON   
     if(ticker_name){
         const dataToStore = {
             [ticker_name]:{
