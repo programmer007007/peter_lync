@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         PeterLynchFormula
 // @namespace    http://tampermonkey.net/
-// @version      2024-04-20
-// @description  try to take over the world!
+// @version      v1
+// @description  Checks to see if the stock if undervalued/overvalued/fairlyvalued using peter lynch formula on yahoo finances site.
 // @author       Johnson
 // @match        https://finance.yahoo.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=yahoo.com
 // @grant        none
-// @license      MIT
+// @license      GPL-3.0-or-later; https://www.gnu.org/licenses/gpl-3.0.txt
 // ==/UserScript==
 
 (function() {
